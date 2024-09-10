@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+  <link rel="stylesheet" href="http://localhost:3000/css/style.css">
+	<div class="jumbotron">
+		<title>Home</title>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			  <div class="navbar-header">
+				<a class="navbar-brand" href="#">smilybot</a>
+			  </div>
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="download.html">downloads</a></li>
+				<li><a href="galery.html">gallery</a></li>
+				<li><a href="about.html">about</a></li>
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		<h1>Your are in my home</h1>
+		<p>Please behave according to humanity</p>
+	</div>
+	</head>
+	<body>
+		
+		<section id="contact">
+			<div class="container">
+				<div class="jumbotron">
+			  <h2>Contact Us</h2>
+			  <form action="http://localhost:3000/api/message" method="POST">
+				<input type="text" name="name" placeholder="Name">
+				<input type="email" name="email" placeholder="Email">
+				<textarea name="message" placeholder="Message"></textarea>
+				<button type="submit">Send Message</button>
+			  </form>
+			</div>
+		</div>
+		  </section>
+	</body>
+	<footer>
+		
+</footer>
+</html>

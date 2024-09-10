@@ -1,0 +1,25 @@
+
+  .button-basic  {
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-report  {
+    @extend .button-basic;
+    background-color: red;
+  }
+  
+  .button-submit  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+  }
+  
+  .button-signup{
+    @extend .button-basic;
+    float: right;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 195, 255);
+  }

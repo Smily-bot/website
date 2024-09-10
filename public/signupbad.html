@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+    </head>
+    <body>
+
+        <h4>User Already Exists! Login or choose another user id</h4>
+        
+        <form action="http://localhost:3000/api/signup" method="POST">
+            <input name="id" type="text" required="required" placeholder="User ID"/>
+            <input name="password" type="password" required="required" placeholder="Password"/>
+            <button type="Submit">Sign me up!</button>
+        </form>
+    </body>
+</html>

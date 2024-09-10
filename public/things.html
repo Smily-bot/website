@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("p1").click(function(){
+        $(this).hide();
+      });
+    });
+    </script>
+  <p1>If you click on me, I will disappear.</p1>
+</head>
+
+
+<body>
+
+<div ng-app="">
+  <p>Name : <input type="text" ng-model="name"></p>
+  <h1><small>Hello {{name}}</small></h1>
+</div>
+<svg height="250" width="500">
+    <polygon points="220,0 300,210 170,250 123,234" style="fill:#a4b6f8;stroke:rgb(0,0,0);stroke-width:2" />
+    <line x1="170" y1="250" x2="220" y2="2.25" style="stroke:rgb(0,0,0);stroke-width:2" />
+    <text x="225" y="30" fill="red" transform="rotate(30 20,40) " style="fill:red;stroke:rgb(0,0,0);stroke-width:0.5;letter-spacing: 5px;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">Triangle</text>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+</body>
+
+<footer>
+    <div class="jumbotron">
+        <h1>Bootstrap Tutorial</h1>
+        <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+        responsive, mobile-first projects on the web.</p>
+      </div>
+      <p>This is some text.</p>
+      <p>This is another text.</p>
+    </div>
+</footer>
+
+</html>
